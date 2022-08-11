@@ -1,3 +1,3 @@
-var gulp = require("gulp");
+const gulp = require("gulp");
 require('require-dir')('./build');
 module.exports = gulp;
