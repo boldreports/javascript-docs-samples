@@ -5,6 +5,7 @@ const config = require('./../webpack.config.js');
 const open = require('open');
 const port = 9000;
 const runSequence = require('gulp4-run-sequence');
+
 gulp.task('serve', function (done) {
   runSequence('clean')
   const server = new WebpackDevServer(webpack(config));
