@@ -6,8 +6,8 @@ const open = require('open');
 const port = 9000;
 const runSequence = require('gulp4-run-sequence');
 
-gulp.task('serve', ()=> {
-  runSequence('clean',function(){
+gulp.task('serve', function (done) {
+  runSequence('clean')
   const server = new WebpackDevServer(webpack(config));
   server.listen(port, 'localhost', function (err) {
     if (err) {
@@ -16,5 +16,5 @@ gulp.task('serve', ()=> {
     console.log('Reports JS sample browser is listening on localhost:', port);
     open('http://localhost:' + port + '/');
   });
-});
+  done();
 });
