@@ -1,8 +1,12 @@
 //Toolbar click event handler
 function ontoolBarItemClick(args) {
-    if (args.value === "CustomItem") {
-        //Implement the code to CustomItem toolbar option
-        alert("CustomItem toolbar option Clicked");
+    if (args.value === "CustomGroup") {
+        //Implement the code to CustomGroup toolbar option
+        alert("CustomGroup toolbar option clicked");
+    }
+    if (args.value === "subCustomGroup") {
+        //Implement the code to subCustomGroup toolbar option
+        alert("SubCustomGroup toolbar option clicked");
     }
 }
 
@@ -13,13 +17,20 @@ $(function () {
                     toolbarSettings: {
                         showToolbar: true,
                         items: ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Print,
-                        customItems: [{
-                            groupIndex: 1,
-                            index: 1,
-                            type: 'Default',
-                            id:'CustomItem',
-                            cssClass: "e-icon e-mail e-reportviewer-icon CustomItem",
-                            tooltip: { header: 'CustomItem', content: 'toolbaritems'}
+                        customGroups: [{
+                            items: [{
+                                type: 'Default',
+                                cssClass: "e-icon e-mail e-reportviewer-icon CustomGroup",
+                                id: 'CustomGroup',
+                                tooltip: { header: 'CustomGroup', content: 'toolbargroups'}
+                            },
+                            {
+                                type: 'Default',
+                                cssClass: "e-icon e-mail e-reportviewer-icon subCustomGroup",
+                                id: 'subCustomGroup',
+                                tooltip: { header: 'subCustomGroup', content: 'subtoolbargroups'}
+                            }],
+                            groupIndex: 3
                         }]
                     },
                     toolBarItemClick: ontoolBarItemClick
