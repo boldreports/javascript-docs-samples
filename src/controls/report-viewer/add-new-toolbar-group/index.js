@@ -11,28 +11,28 @@ function ontoolBarItemClick(args) {
 }
 
 $(function () {
-                $("#viewer").boldReportViewer({
-                    reportServiceUrl: "https://demos.boldreports.com/services/api/ReportViewer",
-                    reportPath: '~/Resources/docs/sales-order-detail.rdl',
-                    toolbarSettings: {
-                        showToolbar: true,
-                        items: ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Print,
-                        customGroups: [{
-                            items: [{
-                                type: 'Default',
-                                cssClass: "e-icon e-mail e-reportviewer-icon CustomGroup",
-                                id: 'CustomGroup',
-                                tooltip: { header: 'CustomGroup', content: 'toolbargroups'}
-                            },
-                            {
-                                type: 'Default',
-                                cssClass: "e-icon e-mail e-reportviewer-icon subCustomGroup",
-                                id: 'subCustomGroup',
-                                tooltip: { header: 'subCustomGroup', content: 'subtoolbargroups'}
-                            }],
-                            groupIndex: 3
-                        }]
+        $("#viewer").boldReportViewer({
+            reportServiceUrl: "https://demos.boldreports.com/services/api/ReportViewer",
+            reportPath: '~/Resources/docs/sales-order-detail.rdl',
+            toolbarSettings: {
+                showToolbar: true,
+                items: ej.ReportViewer.ToolbarItems.All & ~ej.ReportViewer.ToolbarItems.Print,
+                customGroups: [{
+                    items: [{
+                        type: 'Default',
+                        cssClass: "e-icon e-mail e-reportviewer-icon CustomGroup",
+                        id: 'CustomGroup',
+                        tooltip: { header: 'CustomGroup', content: 'toolbargroups'}
                     },
-                    toolBarItemClick: ontoolBarItemClick
-                });
-            });
+                    {
+                        type: 'Default',
+                        cssClass: "e-icon e-mail e-reportviewer-icon subCustomGroup",
+                        id: 'subCustomGroup',
+                        tooltip: { header: 'subCustomGroup', content: 'subtoolbargroups'}
+                    }],
+                    groupIndex: 3
+                }]
+            },
+            toolBarItemClick: ontoolBarItemClick
+        });
+    });
