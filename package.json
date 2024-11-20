@@ -38,7 +38,7 @@
     "@boldreports/javascript-reporting-controls": "*",
     "codemirror": "5.45.0",
     "jquery": "^3.4.1",
-    "jquery-validation": "1.19.0",
+    "jquery-validation": "1.19.5",
     "jsrender": "1.0.2",
     "whatwg-fetch": "3.0.0"
   }
