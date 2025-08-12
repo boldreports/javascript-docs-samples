@@ -30,7 +30,7 @@
     "shelljs": "^0.8.3",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3",
-    "webpack-dev-server": "3.2.1",
+    "webpack-dev-server": "5.2.1",
     "webpack-stream": "5.2.1"
   },
   "dependencies": {
@@ -38,7 +38,7 @@
     "@boldreports/javascript-reporting-controls": "*",
     "codemirror": "5.58.2",
     "jquery": "^3.4.1",
-    "jquery-validation": "1.19.5",
+    "jquery-validation": "1.20.0",
     "jsrender": "1.0.2",
     "whatwg-fetch": "3.0.0"
   }
