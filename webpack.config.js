@@ -30,9 +30,10 @@ module.exports = {
         },
         {
             test: /\.(png|svg|jpg|gif|cur|ttf|eot|woff)$/,
-            use: [{
-                loader: 'file-loader'
-            }]
+            type: 'asset/resource',
+            generator: {
+                filename: 'assets/[name].[contenthash:8][ext]'
+            }
         }
         ]
     },
