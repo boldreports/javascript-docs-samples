@@ -1,6 +1,6 @@
 @import './../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import './../../node_modules/@boldreports/javascript-reporting-controls/Content/material/bold.reports.all.min.css';
-@import './../../node_modules/@boldreports/javascript-reporting-controls/Content/material/bold.reportdesigner.min.css';
+@import './../../node_modules/@boldreports/javascript-reporting-controls/Content/v2.0/tailwind-light/bold.report-viewer.min.css';
+@import './../../node_modules/@boldreports/javascript-reporting-controls/Content/v2.0/tailwind-light/bold.report-designer.min.css';
 
 @import './../../node_modules/codemirror/lib/codemirror.css';
 @import './../../node_modules/codemirror/addon/hint/show-hint.css';
