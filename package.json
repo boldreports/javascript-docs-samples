@@ -6,8 +6,7 @@
   "license": "ISC",
   "scripts": {
     "build": "gulp build",
-    "serve": "gulp serve",
-    "postinstall": "gulp copy"
+    "serve": "gulp serve"
   },
   "devDependencies": {
     "@babel/cli": "7.26.4",
@@ -25,7 +24,7 @@
     "require-dir": "1.2.0",
     "gulp4-run-sequence": "^1.0.1",
     "@popperjs/core": "2.11.8",
-    "shelljs": "0.8.4",
+    "shelljs": "0.10.0",
     "webpack": "5.97.1",
     "webpack-cli": "6.0.1",
     "webpack-dev-server": "5.2.1",
